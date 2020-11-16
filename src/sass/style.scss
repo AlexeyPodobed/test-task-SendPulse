@@ -1,0 +1,12 @@
+// Variables - Переменные
+@import "variables/fonts.scss", "variables/global.scss";
+
+// Extensions - Расширения
+@import "extensions/demo";
+
+// Sections - Дублирующиеся раздела сайта
+
+@import "sections/sidebar.scss",
+        "sections/header.scss",
+        "sections/content.scss",
+        "sections/modal.scss";

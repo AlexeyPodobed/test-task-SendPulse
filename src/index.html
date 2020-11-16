@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <section class="body">
+
+      ${require(`./modules/header.html`)}
+
+      <div class="modal hidden">
+        <div class="modal-wrap">
+            <div> <span class="close"></span></div>
+            <h1>Add Social Profile</h1>
+            <p>Add new social profile for tracking</p>
+            <label for="">URL</label>
+            <input type="text" placeholder="https://twitter.com/username">
+            <button>Lookup</button>
+        </div>
+      </div>
+      <div class="modal-overlay hidden"></div>
+
+      <section class="section-wrap">
+
+        ${require(`./modules/sidebar.html`)}
+
+        ${require(`./modules/content.html`)}
+
+      </section>
+
+    </section>
+  </body>
+</html>

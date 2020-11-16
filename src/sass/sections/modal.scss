@@ -1,0 +1,120 @@
+.modal {
+  max-width: 600px;
+  width: 95%;
+  height: 260px;
+  background: $white;
+  border-radius: $borderRadius4px;
+  position: fixed;
+  top: 116px;
+  right: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -300px;
+  z-index: 500;
+  animation: showBlock 0.5s linear forwards;
+  @media screen and (max-width: 600px) {
+    margin-left: -47.5%;
+  }
+  .modal-wrap {
+    max-width: 548px;
+    width: 95%;
+    margin: 0 auto;
+    margin-top: 22px;
+    @extend %flex-col;
+    font-family: $Roboto;
+    h1 {
+      font-size: $font-size18;
+      font-style: normal;
+      font-weight: $font-weight700;
+    }
+    p {
+      margin-top: 30px;
+      font-size: $font-size14;
+      font-style: normal;
+      font-weight: $font-weight400;
+    }
+    label {
+      margin-top: 19px;
+      font-size: $font-size14;
+      font-style: normal;
+      font-weight: $font-weight700;
+    }
+    input {
+      width: calc(100% - 38px);
+      height: 40px;
+      background: $white;
+      border: 1px solid $white2;
+      border-radius: $borderRadius6px;
+      padding: 0 22px 0 16px;
+      font-family: $Roboto;
+      font-size: $font-size14;
+      font-style: normal;
+      font-weight: $font-weight400;
+      margin-top: 8px;
+    }
+    button {
+      align-self: flex-end;
+      margin-top: 20px;
+      height: 40px;
+      width: 117px;
+      border-radius: $borderRadius6px;
+      background: $gradientGreen3;
+      border: none;
+      font-family: $Roboto;
+      font-size: $font-size14;
+      font-style: normal;
+      font-weight: $font-weight400;
+      &:hover {
+        background: $gradientRed2;
+        color: $white;
+      }
+    }
+    .close {
+      position: absolute;
+      right: 30px;
+      top: 20px;
+      width: 12px;
+      height: 12px;
+      opacity: 0.6;
+    }
+    .close &:hover {
+      opacity: 1;
+    }
+    .close:before,
+    .close:after {
+      position: absolute;
+      left: 15px;
+      content: " ";
+      height: 17px;
+      width: 1px;
+      background-color: $black;
+    }
+    .close:before {
+      transform: rotate(45deg);
+    }
+    .close:after {
+      transform: rotate(-45deg);
+    }
+  }
+}
+.modal-overlay {
+  background: rgba(0, 0, 0, 0.5);
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 400;
+  transition: background 0.3s linear;
+  animation: showBlock 1s linear forwards;
+}
+@keyframes showBlock {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }

@@ -1,0 +1,121 @@
+// position flex
+%flex-col {
+  display: flex;
+  flex-direction: column;
+}
+%flex-center {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+%flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.hidden {
+  display: none;
+}
+
+//colors vars
+$white: #fff;
+$white2:#c5cfc9;
+$whiteOpacity1:rgba(255, 255, 255, 0.1);
+$black: #000;
+$black2:#333333;
+$blackOpacity:rgba(0, 0, 0, 0.3);
+$brown:#EFF7ED;
+$green:#1dce6c;
+$green2:#1CAF5E;
+$green3:#b8e986;
+$green4:#147a42;
+$grayOpacity: rgba(0, 0, 0, 0.3);
+$grayOpacity2:rgba(255, 255, 255, 0.15);
+$red:rgba(249, 63, 45, 1);
+$redOpacity:rgba(249, 63, 45, 0.6);
+
+
+$gradientGreen: linear-gradient(180deg, #2dbc80 0.55%, #53cc71 99.33%);
+$gradientGreen2:linear-gradient(180deg, #00B687 0%, #008E87 100%), #00B687;
+$gradientGreen3:linear-gradient(180deg, #53cd72 0%, #1caf5e 100%);
+$gradientBlue1:linear-gradient(180deg, #39579a 0%, #2c4479 97.23%),
+#39579a;
+$gradientBlue2:linear-gradient(180deg, #059FF5 0%, #059FC3 100%), #059FF5;
+$gradientBlue3: linear-gradient(180deg, #007EBB 0%, #007E9D 98.51%), #007EBB;
+$gradientOrange:linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+$gradientRed1: linear-gradient(180deg, #CE1312 0%, #B01312 100%), #CE1312;
+$gradientRed2:linear-gradient(180deg, #F93F2D 0%, #C73F2D 100%), #F93F2D;
+
+$gradientYellow:linear-gradient(180deg, #FFFE00 0%, #F3F200 96.43%), #FFFE00;
+
+
+
+
+
+// box shadow vars
+$boxShadow1:inset -1px 0px 0px rgba(28, 175, 94, 0.1);
+$boxShadow2: 0px 0px 20px rgba(0, 0, 0, 0.0472713);
+$boxShadow3: 0px 2px 9px rgba(0, 0, 0, 0.03);
+
+
+
+// fonts vars
+$Roboto: Roboto;
+$Oswald: Oswald;
+
+
+// fonts size vars
+$font-size9:9px;
+$font-size10:10px;
+$font-size11:11px;
+$font-size12: 12px;
+$font-size13: 13px;
+$font-size14: 14px;
+$font-size16: 16px;
+$font-size18:18px;
+$font-size24:24px;
+$font-size26:26px;
+$font-size42: 42px;
+
+$line-height12:12px;
+$line-height13:13px;
+$line-height14: 14px;
+$line-height16: 16px;
+$line-height19: 19px;
+$line-height28: 28px;
+
+$font-weight400:400;
+$font-weight700: 700;
+
+$letter-spacing2: 2.5px;
+
+
+//border-radius
+$borderRadius50:50%;
+$borderRadius4px:4px;
+$borderRadius5px:5px;
+$borderRadius6px: 6px;
+
+
+
+// button settings
+button {
+  cursor: pointer;
+  outline: none;
+  transition: color 0.3s, background-color 0.3s, border 0.3s, box-shadow 0.3s;
+  transition-timing-function: ease;
+  transition: 0.5s;
+}
+input {
+  cursor: pointer;
+  outline: none;
+}
+// transition
+$transition: 0.5s;
+$transition1s: 1s;
+
+
+
+.section-wrap{
+  @extend %flex-row;
+}
