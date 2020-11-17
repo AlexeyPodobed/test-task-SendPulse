@@ -9,6 +9,7 @@
   align-items: center;
   justify-content: space-between;
   z-index: 400;
+  
   @media screen and (max-width: 900px) {
     position: fixed;
     background: $gradientGreen;
@@ -28,7 +29,7 @@
         transform: translateY(-5px);
       }
     }
-    .header-btn1 {
+    .header-btn-notify {
       position: relative;
       span {
         @extend %flex-center;
@@ -57,7 +58,7 @@
         width: 15px;
       }
     }
-    .header-btn2 {
+    .header-btn-secarch {
       svg {
         transition: $transition;
         height: 20px;
