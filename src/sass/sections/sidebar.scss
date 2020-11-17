@@ -6,14 +6,14 @@
   position: relative;
   @media screen and (min-height: 970px){
     height: 100vh;
-  }
+}
   .sidebar-wrap {
     margin: 0 auto;
     padding-top: 110px;
     width: 200px;
     height: 80%;
     @extend %flex-col;
-    @media screen and (max-width: 800px){
+    @media screen and (max-width: 900px){
         padding-top: 90px;
     }
     .sidebar-profile {
@@ -43,7 +43,7 @@
     }
     .sidebar-nav {
       margin-top: 40px;
-      @media screen and (max-width: 800px){
+      @media screen and (max-width: 900px){
           margin-top: 20px;
       }
       ul {
@@ -91,7 +91,7 @@
       width: 171px;
       border-top: 1px solid $blackOpacity;
       padding-top: 8px;
-      @media screen and (max-width: 800px) {
+      @media screen and (max-width: 900px) {
           position: relative;
           margin-top: 35px;
       }
@@ -121,7 +121,7 @@
   }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 900px) {
   .sidebar {
     position: fixed;
     transform: translateX(-100%);

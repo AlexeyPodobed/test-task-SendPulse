@@ -3,10 +3,13 @@
   width: calc(100% - 240px);
   min-height: 970px;
   background: $brown;
+  @media screen and (min-height: 970px){
+    height: calc(100vh - 70px);
+}
   @media screen and (max-width: 1090px) {
     padding-bottom: 30px;
   }
-  @media screen and (max-width: 800px) {
+  @media screen and (max-width: 900px) {
     width: 100%;
   }
   .content-wrap {
@@ -63,7 +66,7 @@
       align-items: center;
       justify-content: space-between;
       width: 210px;
-      @media screen and (max-width: 800px) {
+      @media screen and (max-width: 900px) {
         margin: 0 auto;
         margin-top: 24px;
       }
@@ -181,14 +184,14 @@
         }
         .content-profile {
           margin-top: 10px;
-          height: 40;
+          height: 40px;
           width: 100%;
           border-radius: $borderRadius5px;
           @extend %flex-row;
           transition: $transition;
           div {
             @extend %flex-col;
-            justify-content: space-between;
+            justify-content: space-around;
             height: 100%;
             margin-left: 10px;
             font-family: $Roboto;

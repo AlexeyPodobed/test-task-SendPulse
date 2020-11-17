@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  <link href="main.css" rel="stylesheet"></head>
+  <body>
+    <section class="body">
+
+      <section class="header">
+  <div class="header-logo">
+    <img src="images/sociotrack-logo560ea47e8e5433f1cdf48fccba01dff5.png" alt="" />
+  </div>
+  <a class="show-sidebar"><span></span></a>
+  <div class="header-btns">
+    <div class="header-btn1">
+        <span>2</span>
+      <svg class="svg">
+        <use xlink:href="#notification-icon"></use>
+      </svg>
+    </div>
+    <div class="header-btn2">
+      <svg class="svg">
+        <use xlink:href="#search-icon"></use>
+      </svg>
+    </div>
+  </div>
+</section>
+
+
+      <div class="modal hidden">
+        <div class="modal-wrap">
+            <div> <span class="close"></span></div>
+            <h1>Add Social Profile</h1>
+            <p>Add new social profile for tracking</p>
+            <label for="">URL</label>
+            <input type="text" placeholder="https://twitter.com/username">
+            <button>Lookup</button>
+        </div>
+      </div>
+      <div class="modal-overlay hidden"></div>
+
+      <section class="section-wrap">
+
+        <section class="sidebar">
+  <div class="sidebar-wrap">
+    <div class="sidebar-profile">
+      <img src="images/avatar51ac719f8699eb66d82662187b12c366.png" alt="img" />
+      <div>
+        <h1>Abhisek Das</h1>
+        <p><span>10,968</span>Followers</p>
+      </div>
+    </div>
+    <nav class="sidebar-nav">
+      <ul>
+        <li class="active-link">
+          <a href="#">
+            <svg class="svg">
+              <use xlink:href="#dashboard-icon"></use>
+            </svg>
+            <span>Dashboard</span>
+            </a
+          >
+        </li>
+        <li>
+          <a href="#">
+            <svg class="svg">
+              <use xlink:href="#social-feed-icon"></use>
+            </svg>
+            <span>Social Feed</span>
+            
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <svg class="svg">
+              <use xlink:href="#invite-friends-icon"></use>
+            </svg>
+            <span>Social Feed</span></a
+          >
+        </li>
+        <li>
+          <a href="#">
+            <svg class="svg">
+              <use xlink:href="#settings-icon"></use>
+            </svg>
+            <span> Settings</span>
+           </a
+          >
+        </li>
+        <li>
+          <a href="#">
+            <svg class="svg">
+              <use xlink:href="#log-out-icon"></use>
+            </svg>
+            <span>Log out</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <div class="sidebar-footer">
+    
+      <div>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Terms</a></li>
+        <li><a href="#">Privacy</a></li>
+      </div>
+      <div>
+        <li><a href="#">Help</a></li>
+        <li><a href="#">Report</a></li>
+        
+      </div>
+    </div>
+  </div>
+</section>
+
+
+        <section class="content">
+  <div class="content-wrap">
+    <div class="content-top-block">
+      <h1>@ABHISEK.DAS</h1>
+      <button class="content-add-btn">+ Add Social Profile</button>
+    </div>
+    <ul class="content-tabs">
+      <li class="tab-active">
+        <p>Last day</p>
+        <span></span>
+      </li>
+      <li>
+        <p>Week</p>
+        <span></span>
+      </li> 
+      <li>
+        <p>Month</p>
+        <span></span>
+      </li>
+    </ul>
+    <div id="addHere" class="content-blocks">
+    </div>
+  </div>
+</section>
+
+
+      </section>
+
+    </section>
+  <script type="text/javascript" src="js/bundle.js"></script></body>
+</html>

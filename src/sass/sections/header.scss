@@ -9,7 +9,7 @@
   align-items: center;
   justify-content: space-between;
   z-index: 400;
-  @media screen and (max-width: 800px) {
+  @media screen and (max-width: 900px) {
     position: fixed;
     background: $gradientGreen;
   }
@@ -46,7 +46,7 @@
         line-height: $line-height12;
         color: $white;
         transition: $transition;
-        @media screen and (max-width: 800px) {
+        @media screen and (max-width: 900px) {
           background: $white;
           color: $black;
         }
@@ -74,7 +74,7 @@
   align-self: center;
   justify-self: start;
   z-index: 400;
-  @media screen and (min-width: 800px){
+  @media screen and (min-width: 900px){
     display: none;
   }
   span {

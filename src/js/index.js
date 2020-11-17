@@ -3,6 +3,7 @@ import svg from './svg.js';
 
 
 import './modules/Slider';
+import './service';
 
 
 import $ from 'jquery';
@@ -41,3 +42,7 @@ close = () => {
 closeModal.addEventListener('click', close);
 
 popUpOverlay.addEventListener('click', close);
+
+
+
+
